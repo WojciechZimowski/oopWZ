@@ -5,13 +5,8 @@ public class Main {
 
         Point start=new Point(0,40);
         Point end=new Point(30,70);
-        Segment line=new Segment(start,end);
+        Segment line=new Segment(new Point(start),new Point(end));
         start.setY(200);
-
-
-
-
-
 
         }
     }
