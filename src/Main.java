@@ -3,18 +3,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        Point p2=new Point(7,8);
-        p2.x=3;
-        p2.y=4;
-        System.out.println(p2.toString());
-        //dwdawdadwa
-        //Updateupdate
-        /*LONG TIME AGO
-        BEFORE TIME HAD A NAME
-        THE FIRST SPINJITZU MASTER
-        CREATED NINJAGO USING FOUR
-        ELEMENTAL WEAPONS.
-         */
+        Point start=new Point(0,40);
+        Point end=new Point(30,70);
+        Segment line=new Segment(start,end);
+        start.setY(200);
+
+
+
+
+
 
         }
     }
