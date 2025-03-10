@@ -9,7 +9,12 @@ public class Main {
         System.out.println(p2.toString());
         //dwdawdadwa
         //Updateupdate
-
+        /*LONG TIME AGO
+        BEFORE TIME HAD A NAME
+        THE FIRST SPINJITZU MASTER
+        CREATED NINJAGO USING FOUR
+        ELEMENTAL WEAPONS.
+         */
 
         }
     }
