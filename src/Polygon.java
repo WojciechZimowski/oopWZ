@@ -50,7 +50,9 @@ public class Polygon {
         ArrayList<Point> points = new ArrayList<>();
         points.add(s.getStart());
         points.add(s.getEnd());
-        //Segment perpendicular = s.findPerpendicular();
+        //Segment perpendicularSegment = s.findPerpendicular();
+        //points.add(perpendicularSegment.getStart());
+        //points.add(perpendicularSegment.getEnd());
         return new Polygon(,style);
 
 
