@@ -1,7 +1,9 @@
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
 //        Point start=new Point(0,40);
 //        Point end=new Point(30,70);
@@ -15,5 +17,12 @@ public class Main {
         Polygon poly = new Polygon(points);
         // tam gdzie "[,]" w debugu to tablica
 
+        try{
+            //spróbuj zrobić tą linijkę a jak nie to przejdz do catch
+        FileWriter fw=new FileWriter("kształty.svg");
+        }catch (IOException e){
+            //przechwytuje błędy
+
         }
+    }
     }
