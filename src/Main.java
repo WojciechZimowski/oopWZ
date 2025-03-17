@@ -12,17 +12,23 @@ public class Main {
         //\\\\\\\\\\\\\\
         ArrayList<Point> points = new ArrayList<>();
         points.add(new Point(0,0));
-        points.add(new Point(20,50));
+        points.add(new Point(30,50));
         points.add(new Point(15,80));
         Polygon poly = new Polygon(points);
         // tam gdzie "[,]" w debugu to tablica
 
         try{
             //spróbuj zrobić tą linijkę a jak nie to przejdz do catch
-        FileWriter fw=new FileWriter("kształty.svg");
+            FileWriter fw=new FileWriter("kształty.svg");
+            fw.write( poly.toSvg() );
+            fw.close();
         }catch (IOException e){
+            System.out.println("Goodbye");
             //przechwytuje błędy
 
         }
+
+        //robimy cały blok try jeśli nic się nie stanie jest git
+        //a jak nawali to catch(sytuacja awaryjna)
     }
     }
