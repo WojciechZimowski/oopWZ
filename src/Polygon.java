@@ -46,4 +46,13 @@ public class Polygon {
         this.points = points;
         this.gangam = gangam;
     }
+    public static Polygon createSquare(Segment s, Style style){
+        ArrayList<Point> points = new ArrayList<>();
+        points.add(s.getStart());
+        points.add(s.getEnd());
+        //Segment perpendicular = s.findPerpendicular();
+        return new Polygon(,style);
+
+
+    }
 }
