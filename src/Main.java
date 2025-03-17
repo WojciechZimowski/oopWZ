@@ -51,7 +51,7 @@ public class Main {
                 System.out.print((char) ch);
             fr.close();
         } catch (Exception e) {
-
+            System.out.println("Wystąpił błąd");
         }
 
         // close the file
