@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -30,5 +32,30 @@ public class Main {
 
         //robimy cały blok try jeśli nic się nie stanie jest git
         //a jak nawali to catch(sytuacja awaryjna)
+        int ch;
+
+        FileReader fr=null;
+        try
+        {
+            fr = new FileReader("krztałty.svg");
+        }
+        catch (FileNotFoundException fe)
+        {
+            System.out.println("File not found");
+        }
+
+
+        // read from FileReader till the end of file
+        try {
+            while ((ch = fr.read()) != -1)
+                System.out.print((char) ch);
+            fr.close();
+        } catch (Exception e) {
+
+        }
+
+        // close the file
+
     }
-    }
+}
+
