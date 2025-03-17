@@ -45,7 +45,6 @@ public class Style {
                 ";stroke:" +
                 strokeColor +
                 ";stroke-width:" +
-                strokeWidth +
-                "\"";
+                strokeWidth;
     }
 }

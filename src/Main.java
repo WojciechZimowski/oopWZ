@@ -16,7 +16,7 @@ public class Main {
         points.add(new Point(0,0));
         points.add(new Point(30,50));
         points.add(new Point(15,80));
-        Polygon poly = new Polygon(points);
+        Polygon poly = new Polygon(points,new Style("#FA0072","#00FFFF",2));
         // tam gdzie "[,]" w debugu to tablica
 
         try{

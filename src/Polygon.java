@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 
 public class Polygon {
+
+    private Style gangam;
+
     private ArrayList<Point> points;
 
     public Polygon(ArrayList<Point> points) {
@@ -24,9 +27,23 @@ public class Polygon {
             middle += p.getX()+","+p.getY()+" ";
         }
 
-        String ending = "\" style=\"fill:lime;stroke:purple;stroke-width:3\" />\n" +
+        String ending = "\" " +
+                gangam.toSvg() +
+                "\" />\n" +
                 "</svg>";
         return begining + middle + ending;
     }
 
+    public Style getGangam() {
+        return gangam;
+    }
+
+    public void setGangam(Style gangam) {
+        this.gangam = gangam;
+    }
+
+    public Polygon(ArrayList<Point> points, Style gangam) {
+        this.points = points;
+        this.gangam = gangam;
+    }
 }
