@@ -14,9 +14,9 @@ public class Main {
         //\\\\\\\\\\\\\\
         ArrayList<Point> points = new ArrayList<>();
         points.add(new Point(0,0));
-        points.add(new Point(30,50));
+        points.add(new Point(80,50));
         points.add(new Point(15,80));
-        Polygon poly = new Polygon(points,new Style("#FA0072","#00FFFF",2));
+        Polygon poly = new Polygon(points,new Style("#FAE072","#00FFFF",2));
         // tam gdzie "[,]" w debugu to tablica
 
         try{
@@ -37,7 +37,7 @@ public class Main {
         FileReader fr=null;
         try
         {
-            fr = new FileReader("krztałty.svg");
+            fr = new FileReader("kształty.svg");
         }
         catch (FileNotFoundException fe)
         {

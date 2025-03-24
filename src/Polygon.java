@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 
-public class Polygon {
+public class Polygon extends Shape {
 
-    private Style gangam;
+
 
     private ArrayList<Point> points;
 
     public Polygon(ArrayList<Point> points) {
+        super();
         this.points = points;
 
 
@@ -34,27 +35,21 @@ public class Polygon {
         return begining + middle + ending;
     }
 
-    public Style getGangam() {
-        return gangam;
-    }
-
-    public void setGangam(Style gangam) {
-        this.gangam = gangam;
-    }
 
     public Polygon(ArrayList<Point> points, Style gangam) {
+        super(gangam);
         this.points = points;
-        this.gangam = gangam;
+
     }
-    public static Polygon createSquare(Segment s, Style style){
-        ArrayList<Point> points = new ArrayList<>();
-        points.add(s.getStart());
-        points.add(s.getEnd());
-        //Segment perpendicularSegment = s.findPerpendicular();
-        //points.add(perpendicularSegment.getStart());
-        //points.add(perpendicularSegment.getEnd());
-        return new Polygon(,style);
+//    public static Polygon createSquare(Segment s, Style style){
+//        ArrayList<Point> points = new ArrayList<>();
+//        points.add(s.getStart());
+//        points.add(s.getEnd());
+//        Segment perpendicularSegment = s.findPerpendicular();
+//        points.add(perpendicularSegment.getStart());
+//        points.add(perpendicularSegment.getEnd());
+//        return new Polygon(,style);
 
 
     }
-}
+

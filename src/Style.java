@@ -30,6 +30,8 @@ public class Style {
         this.strokeWidth = strokeWidth;
     }
 
+
+
     public Style(String fillColor, String strokeColor, double strokeWidth) {
         this.fillColor = fillColor;
         this.strokeColor = strokeColor;
