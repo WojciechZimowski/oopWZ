@@ -18,8 +18,8 @@ public class Main {
         points.add(new Point(15,80));
         Shape poly = new Polygon(points,new Style("#FF0000","#00FFFF",2));
         // tam gdzie "[,]" w debugu to tablica
-        Shape ellipse=new Ellipse(new Style("#888888","#000000",3),
-        new Point(100,100), 100,50);
+        Shape ellipse=new Circle(new Style("#888888","#00FF00",3),
+        new Point(100,100), 100);
 
         try{
             //spróbuj zrobić tą linijkę a jak nie to przejdz do catch
