@@ -6,7 +6,7 @@ public class Circle  extends Ellipse{
     public Circle(Point center, double r) {
         super(center, r, r);
     }
-
+//idk
     public Circle() {
     }
 }
