@@ -20,8 +20,7 @@ public class Polygon extends Shape {
                 '}';
     }
     public String toSvg(){
-        String begining = "<svg height=\"220\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n" +
-                "  <polygon points=\"";
+        String begining = "  <polygon points=\"";
 
         String middle= "";
         for(Point p : points){
@@ -30,8 +29,7 @@ public class Polygon extends Shape {
 
         String ending = "\" " +
                 gangam.toSvg() +
-                "\" />\n" +
-                "</svg>";
+                "\" />\n";
         return begining + middle + ending;
     }
 
