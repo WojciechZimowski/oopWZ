@@ -27,12 +27,12 @@ public class Ellipse implements Shape{
     public String toSvg(String param) {
         return
                 "  <ellipse rx=\"" + rx +
-                "\" ry=\"" + ry +
-                "\" cx=\"" + center.getX() +
-                "\" cy=\"" + center.getY() +
-                "\"\n" +
-                 "" + param +
-                "\" />\n";
+                        "\" ry=\"" + ry +
+                        "\" cx=\"" + center.getX() +
+                        "\" cy=\"" + center.getY() +
+                        "\"\n" +
+                        "" + param +
+                        " />\n";
     }
 }
 
