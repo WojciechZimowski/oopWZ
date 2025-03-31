@@ -17,12 +17,12 @@ public class Main {
         points.add(new Point(80,50));
         points.add(new Point(15,80));
         SvgScene picture = new SvgScene(1000,1000);
-        Shape poly = new Polygon(points,new Style("#FF0000","#00FFFF",2));
+        Shape poly = new SolidFilledPolygon(points,"#FF0000");
         // tam gdzie "[,]" w debugu to tablica
-        Shape ellipse=new Circle(new Style("#888888","#00FFF0",3),
-        new Point(200,100), 50);
+//        Shape ellipse=new Circle(new Style("#888888","#00FFF0",3),
+//        new Point(200,100), 50);
         picture.getShapes().add(poly);
-        picture.getShapes().add(ellipse);
+//        picture.getShapes().add(ellipse);
         try{
             //spróbuj zrobić tą linijkę a jak nie to przejdz do catch
             FileWriter fw=new FileWriter("kształty.svg");

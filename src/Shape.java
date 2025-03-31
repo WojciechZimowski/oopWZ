@@ -1,5 +1,5 @@
 public interface Shape {
-     Style gangam;//protected- tylko klasy które dziedziczą to widzą
+     //Style gangam;//protected- tylko klasy które dziedziczą to widzą
 
 //    public Shape(Style gangam) {
 //        this.gangam = gangam;
