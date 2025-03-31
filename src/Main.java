@@ -21,7 +21,12 @@ public class Main {
         // tam gdzie "[,]" w debugu to tablica
 //        Shape ellipse=new Circle(new Style("#888888","#00FFF0",3),
 //        new Point(200,100), 50);
-        picture.getShapes().add(poly);
+//        picture.getShapes().add(poly);
+        Shape simplePolygon = new Polygon(points);
+        Shape coloredPolygon = new SolidFilledShapeDecorator(simplePolygon,"#0000FF");
+        picture.getShapes().add(coloredPolygon);
+
+
 //        picture.getShapes().add(ellipse);
         try{
             //spróbuj zrobić tą linijkę a jak nie to przejdz do catch

@@ -64,7 +64,9 @@ public class Polygon implements Shape {
         }
         return String.format(Locale.ENGLISH, "<polygon points=\"%s\" %s/>", pointsString,param);
     }
+
     public String toSvg()    {
+
         return toSvg("");
     }
 }

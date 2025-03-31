@@ -20,18 +20,19 @@ public class Ellipse implements Shape{
 
     @Override
     public String toSvg() {
+        return toSvg("");
+    }
+
+    @Override
+    public String toSvg(String param) {
         return
                 "  <ellipse rx=\"" + rx +
                 "\" ry=\"" + ry +
                 "\" cx=\"" + center.getX() +
                 "\" cy=\"" + center.getY() +
                 "\"\n" +
-               // "  " + gangam.toSvg() +
+                 "" + param +
                 "\" />\n";
     }
-
-    @Override
-    public String toSvg(String param) {
-        return null;
-    }
 }
+
