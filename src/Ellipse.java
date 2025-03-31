@@ -1,11 +1,11 @@
-public class Ellipse extends Shape{
+public class Ellipse implements Shape{
 
     private Point center;
 
     private double rx, ry;
 
     public Ellipse(Style gangam, Point center, double rx, double ry) {
-        super(gangam);
+        //super(gangam);
         this.center = center;
         this.rx = rx;
         this.ry = ry;
@@ -26,7 +26,12 @@ public class Ellipse extends Shape{
                 "\" cx=\"" + center.getX() +
                 "\" cy=\"" + center.getY() +
                 "\"\n" +
-                "  " + gangam.toSvg() +
+               // "  " + gangam.toSvg() +
                 "\" />\n";
+    }
+
+    @Override
+    public String toSvg(String param) {
+        return null;
     }
 }
