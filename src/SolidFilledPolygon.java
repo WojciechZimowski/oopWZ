@@ -3,13 +3,22 @@ import java.util.ArrayList;
 public class SolidFilledPolygon extends Polygon {
 
     private String color;
+    private String strokeC;
+    private String strokeW;
 
-    public SolidFilledPolygon(ArrayList<Point> points, String color) {//konstruktor
+    public SolidFilledPolygon(ArrayList<Point> points, String color,String strokeC,String strokeW) {//konstruktor
         super(points);
         this.color = color;
+        this.strokeC = strokeC;
+        this.strokeW = strokeW;
     }
     public String toSvg(String param){
-        return super.toSvg( "style=\"fill:" + color +
+        return super.toSvg( " style=\"fill:" +
+                color +
+                ";stroke:" +
+                strokeC +
+                ";stroke-width:" +
+                strokeW+
                 "\"");
 
 //        "<polygon points=\"%s\" %s />"

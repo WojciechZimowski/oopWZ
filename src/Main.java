@@ -1,3 +1,4 @@
+import javax.xml.crypto.dsig.TransformService;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -17,18 +18,19 @@ public class Main {
         points.add(new Point(80,50));
         points.add(new Point(15,80));
         SvgScene picture = new SvgScene(100,100);
-        Shape poly = new SolidFilledPolygon(points,"#FF0000");
+        Shape poly = new SolidFilledPolygon(points,"#FF0000","#FFFF00","2");
         // tam gdzie "[,]" w debugu to tablica
 //        Shape ellipse=new Circle(new Style("#888888","#00FFF0",3),
 //        new Point(200,100), 50);
 //        picture.getShapes().add(poly);
         Shape simplePolygon = new Polygon(points);
-        Shape simpleElipsis = new Ellipse(new Point(50,50),50,50);
+        Shape simpleElipsis = new Ellipse(new Point(50,50),10,30);
         Shape coloredPolygon = new SolidFilledShapeDecorator(simplePolygon,"#0000FF");
         Shape greenEllipsis = new SolidFilledShapeDecorator(simpleElipsis,"#00FF00");
+        //Shape rotatedEllipsis= new TransformationDecorator.Builder().rotate("20");
         picture.getShapes().add(greenEllipsis);
         picture.getShapes().add(coloredPolygon);
-//DO DOMU STROKE I STROKE WITH
+//DO DOMU STROKE I STROKE WIDTH
 
 //        picture.getShapes().add(ellipse);
         try{
