@@ -3,8 +3,10 @@ import java.util.ArrayList;
 public class SolidFilledPolygon extends Polygon {
 
     private String color;
+    //DO DOMU STROKE I STROKE WIDTH
     private String strokeC;
     private String strokeW;
+    //DO DOMU STROKE I STROKE WIDTH
 
     public SolidFilledPolygon(ArrayList<Point> points, String color,String strokeC,String strokeW) {//konstruktor
         super(points);

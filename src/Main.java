@@ -20,10 +20,12 @@ public class Main {
         SvgScene picture = new SvgScene(100,100);
         Shape poly = new SolidFilledPolygon(points,"#FF0000","#FFFF00","15");
         picture.getShapes().add(poly);
+
         // tam gdzie "[,]" w debugu to tablica
 //        Shape ellipse=new Circle(new Style("#888888","#00FFF0",3),
 //        new Point(200,100), 50);
 //        picture.getShapes().add(poly);
+
         Shape simplePolygon = new Polygon(points);
         Shape simpleElipsis = new Ellipse(new Point(50,50),10,30);
         Shape coloredPolygon = new SolidFilledShapeDecorator(simplePolygon,"#0000FF");
@@ -31,9 +33,8 @@ public class Main {
         //Shape rotatedEllipsis= new TransformationDecorator.Builder().rotate("20");
 //        picture.getShapes().add(greenEllipsis);
 //        picture.getShapes().add(coloredPolygon);
-//DO DOMU STROKE I STROKE WIDTH
-
 //        picture.getShapes().add(ellipse);
+
         try{
             //spróbuj zrobić tą linijkę a jak nie to przejdz do catch
             FileWriter fw=new FileWriter("kształty.svg");
@@ -70,7 +71,6 @@ public class Main {
         }
 
         // close the file
-        //kakakakka
 
     }
 }
