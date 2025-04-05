@@ -9,8 +9,8 @@ public class SolidFilledPolygon extends Polygon {
     public SolidFilledPolygon(ArrayList<Point> points, String color,String strokeC,String strokeW) {//konstruktor
         super(points);
         this.color = color;
-        this.strokeC = strokeC;
-        this.strokeW = strokeW;
+        this.strokeC = strokeC;//storkeColor
+        this.strokeW = strokeW;//strokeWidth
     }
     public String toSvg(String param){
         return super.toSvg( " style=\"fill:" +
