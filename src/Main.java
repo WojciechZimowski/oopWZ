@@ -26,12 +26,12 @@ public class Main {
 //        new Point(200,100), 50);
 //        picture.getShapes().add(poly);
 
-        Shape simplePolygon = new Polygon(points);
+        //Shape simplePolygon = new Polygon(points);
         Shape simpleElipsis = new Ellipse(new Point(50,50),10,30);
-        Shape coloredPolygon = new SolidFilledShapeDecorator(simplePolygon,"#0000FF");
-        Shape greenEllipsis = new SolidFilledShapeDecorator(simpleElipsis,"#00FF00");
+        //Shape coloredPolygon = new SolidFilledShapeDecorator(simplePolygon,"#0000FF");
+        //Shape greenEllipsis = new SolidFilledShapeDecorator(simpleElipsis,"#00FF00","#FFFF00","5");
         //Shape rotatedEllipsis= new TransformationDecorator.Builder().rotate("20");
-//        picture.getShapes().add(greenEllipsis);
+       // picture.getShapes().add(greenEllipsis);
 //        picture.getShapes().add(coloredPolygon);
 //        picture.getShapes().add(ellipse);
 

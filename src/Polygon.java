@@ -32,7 +32,7 @@ public class Polygon implements Shape {
 //        }
 //
 //        String ending = "\" " +
-////                gangam.toSvg() +
+//             gangam.toSvg() +
 //                "\" />\n";
 //        return begining + middle + ending;
 //    }
