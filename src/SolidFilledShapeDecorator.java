@@ -1,13 +1,13 @@
 public class SolidFilledShapeDecorator extends ShapeDecorator {
     String color;
-    String strokeC;
-    String strokeW;
+    String strokeColor;
+    String strokeWidth;
 
-    public SolidFilledShapeDecorator(Shape decoratedShape, String color, String strokeC, String strokeW) {
+    public SolidFilledShapeDecorator(Shape decoratedShape, String color, String strokeColor, String strokeWidth) {
         super(decoratedShape);
         this.color = color;
-        this.strokeC = strokeC;
-        this.strokeW = strokeW;
+        this.strokeColor = strokeColor;
+        this.strokeWidth = strokeWidth;
     }
 
     public String toSvg()    {
@@ -15,9 +15,9 @@ public class SolidFilledShapeDecorator extends ShapeDecorator {
         return decoratedShape.toSvg( " style=\"fill:" +
                 color +
                 ";stroke:" +
-                strokeC +
+                strokeColor +
                 ";stroke-width:" +
-                strokeW+
+                strokeWidth+
                 "\"");
     }
 

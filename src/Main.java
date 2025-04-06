@@ -18,7 +18,7 @@ public class Main {
         points.add(new Point(80,50));
         points.add(new Point(15,80));
         SvgScene picture = new SvgScene(100,100);
-        Shape poly = new SolidFilledPolygon(points,"#FF0000","#FFFF00","15");
+        Shape poly = new SolidFilledPolygon(points,"#FF0000","#FFFF00","5");
         picture.getShapes().add(poly);
 
         // tam gdzie "[,]" w debugu to tablica
@@ -29,7 +29,7 @@ public class Main {
         //Shape simplePolygon = new Polygon(points);
         Shape simpleElipsis = new Ellipse(new Point(50,50),10,30);
         //Shape coloredPolygon = new SolidFilledShapeDecorator(simplePolygon,"#0000FF");
-        //Shape greenEllipsis = new SolidFilledShapeDecorator(simpleElipsis,"#00FF00","#FFFF00","5");
+        Shape greenEllipsis = new SolidFilledShapeDecorator(simpleElipsis,"#00FF00","#FFFF00","5");
         //Shape rotatedEllipsis= new TransformationDecorator.Builder().rotate("20");
        // picture.getShapes().add(greenEllipsis);
 //        picture.getShapes().add(coloredPolygon);

@@ -4,23 +4,23 @@ public class SolidFilledPolygon extends Polygon {
 
     private String color;
     //DO DOMU STROKE I STROKE WIDTH
-    private String strokeC;
-    private String strokeW;
+    private String strokeColor;
+    private String strokeWidth;
     //DO DOMU STROKE I STROKE WIDTH
 
-    public SolidFilledPolygon(ArrayList<Point> points, String color,String strokeC,String strokeW) {//konstruktor
+    public SolidFilledPolygon(ArrayList<Point> points, String color,String strokeColor,String strokeWidth) {//konstruktor
         super(points);
         this.color = color;
-        this.strokeC = strokeC;//storkeColor
-        this.strokeW = strokeW;//strokeWidth
+        this.strokeColor = strokeColor;//storkeColor
+        this.strokeWidth = strokeWidth;//strokeWidth
     }
     public String toSvg(String param){
         return super.toSvg( " style=\"fill:" +
                 color +
                 ";stroke:" +
-                strokeC +
+                strokeColor +
                 ";stroke-width:" +
-                strokeW+
+                strokeWidth+
                 "\"");
 
 //        "<polygon points=\"%s\" %s />"
